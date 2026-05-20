@@ -1,0 +1,312 @@
+*{
+
+    box-sizing: border-box;
+}
+body{
+
+background-color: rgb(255, 236, 127);
+height: auto;
+margin-top: 0px;
+margin-left: 0%;
+margin-right: 0%;
+overflow-x: hidden;
+
+height: 750%;
+}
+
+
+header{
+
+/** background-image: url("styleimg/2025-Cupra-Tindaya-Concept-002-1080.jpg"); **/
+background-color: aliceblue;
+
+text-align: center;
+position:sticky;
+top: 0;
+height: auto;
+margin: 0;
+width: 100%;
+}
+
+footer{
+
+background-color: white;
+color: rgb(236, 29, 57);
+border: 1px solid rgb(0, 0, 0);
+padding: 20px 20px;
+
+margin-bottom: 0px;
+}
+
+
+h1{
+color: rgb(236, 29, 57);
+text-align: center;
+
+
+}
+
+.mybox{
+height: 100px;
+width: 100px;
+background-color: rgb(255, 255, 255);
+margin: 20px;
+padding: 50px;
+border: 10px solid rgb(0, 0, 0);
+color: rgb(0, 0, 0);
+}
+
+.mybox2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 50px;
+    border: 10px solid rgb(255, 255, 255);
+    }
+
+    .parentbox{
+        display:flex;
+
+
+
+    }
+
+    .parabox{
+color: blue;
+    }
+    /** Styles for the Navigation bar */
+
+/***logo{
+
+    display: block;
+}
+*/
+
+
+    ul.nav{
+list-style-type: none;
+background-color: rgb(255, 255, 255);
+overflow: hidden;
+margin: 0;
+padding: 0;
+
+
+
+    }
+
+
+    ul.nav li{
+        float:left;
+
+    }
+
+    ul.nav li a{
+display: block;
+color: rgb(236, 29, 57);
+text-align: center;
+padding: 20px 20px; 
+text-decoration: none;
+    }
+
+   ul.nav li a:hover{
+
+        background-color: rgb(252, 248, 229);
+    }
+   .active{
+    background-color: rgb(255, 236, 127);
+    font-weight: bold;
+
+    }
+
+    /** Media Queries **/
+
+    @media screen and (max-width:900px){
+      ul.nav li{
+        
+        float:none;
+   
+         
+            display: block;
+            text-align: left;
+
+       }
+
+       header{
+
+        /** background-image: url("styleimg/2025-Cupra-Tindaya-Concept-002-1080.jpg"); **/
+        background-color: aliceblue;
+        
+        text-align: center;
+     position: fixed;
+      top: 0;
+        height: auto;
+        margin: 0;
+        width: 100%;
+        }
+
+        body{
+
+            margin-top: 95%;
+        }
+        
+        
+    }
+
+    .imgContainer{
+
+     display: block;
+     margin: 0;
+     width: 50%;
+     height: auto;
+    }
+
+    .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(252, 248, 229); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    margin: 0;
+ padding: 40px;
+}
+
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+   
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"], #message {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+    font-size: 16px;
+}
+
+/* Style for input fields when they are invalid (used by JS) */
+input.invalid {
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+button {
+    background-color: rgb(236, 29, 57);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for error messages */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 5px;
+    height: 1.2em; /* Reserve space to prevent layout jump */
+}
+
+/* Styling for success message */
+.success-message {
+    text-align: center;
+    color: #2ecc71;
+    font-size: 1.1em;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #2ecc71;
+    border-radius: 4px;
+    display: none; /* Hidden until submission is successful */
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}

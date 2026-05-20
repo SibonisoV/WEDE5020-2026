@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+      Our Services: Cars Mania
+
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+<body>
+    <header>
+
+        <!--Beginning of the Navigation bar-->
+        <img src="img/logo.png" width="75px" height="auto" alt="The picture of a logo">
+        <h1 class="header-tag-line"> Afforrdable Cars Join Now </h1> 
+        <ul class="nav">
+            <li> <a href="index.html"> Home </a></li>
+
+            <li class="active"><a href="#"> Services </a>  </li>
+            <li> <a href="about.html"> About Us </a> </li>
+            <li> <a href="gallery.html"> Gallery </a> </li>
+            <li> <a href="contact.html"> Contact </a>  </li>
+            
+            </ul>
+    
+        <!--End of Navigation Bar-->
+    
+         </header>
+
+    <h1>What We Offer  </h1>
+
+    <p> At Cars Mania, we provide a range of services tailored for car lovers and owners.
+         From car showcases and photography to automotive reviews and event promotions, 
+         our team is here to keep your passion alive. 
+        We also offer a platform for businesses to connect with our community and reach car enthusiasts across the globe.</p>
+
+
+        <button class="accordion">BMWs</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Toyota</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">VW</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+        <footer>
+            Cars Mania &copy; 2025 All rights Reserved
+            
+            
+                </footer>
+
+</body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+</script>
+
+</html>
